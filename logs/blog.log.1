@@ -1,0 +1,123 @@
+2019-05-10 16:37:38,165 : ERROR: Exception on /reset_password_request [POST] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 146, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/shashi/Desktop/web/flask/app/email.py", line 13, in send_password_reset_email
+    send_email('[Blog] Reset your password', sender=App.confg['ADMINS'][0], recipients=[user.email],
+AttributeError: 'Flask' object has no attribute 'confg'
+2019-05-10 16:38:25,081 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
+2019-05-10 16:40:04,055 : ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6NSwiZXhwIjoxNTU3NDg3MTU5LjA3MzY5M30.jGIj8kBTCQDijfvEGgBDNRpwWytsrm1qfwxhJBqlbnU [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 156, in reset_password
+    user = User.verify_reset_password_token(token)
+AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
+2019-05-10 16:41:17,762 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
+2019-05-10 16:41:20,906 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
+    posts = current_user.followed_posts().paginate(
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-05-10 17:09:35,073 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
+    posts = current_user.followed_posts().paginate(
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-05-10 17:15:36,126 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
+2019-05-10 17:15:40,147 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
+    posts = current_user.followed_posts().paginate(
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-05-10 17:20:51,576 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
+2019-05-10 17:21:05,290 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
+    posts = current_user.followed_posts().paginate(
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-07-04 17:56:52,748 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
+2019-07-04 17:57:43,666 : ERROR: Exception on / [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
+    posts = current_user.followed_posts().paginate(
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-07-04 17:59:25,850 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
