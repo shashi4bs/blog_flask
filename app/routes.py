@@ -11,7 +11,6 @@ from app.models import Post
 from app.email import send_password_reset_email
 from guess_language import guess_language
 
-@App.route('/', methods=['GET', 'POST'])
 @App.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():
@@ -43,6 +42,7 @@ def explore():
     prev_url = url_for('index', page=posts.prev_num) if posts.has_prev else None
     return render_template('index.html', title='Explore', posts=posts.items, next_url=next_url, prev_url=prev_url)
 
+@App.route('/', methods=['GET', 'POST'])
 @App.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
