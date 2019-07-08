@@ -1,5 +1,6 @@
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.flaskenv'))
 
 class Config():
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret_key'
