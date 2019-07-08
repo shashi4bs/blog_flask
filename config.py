@@ -16,3 +16,4 @@ class Config():
     ADMINS = ['shashi4bs@gmail.com', 'saar16cs@cmrit.ac.in']
     POSTS_PER_PAGE = 3
     LANGUAGES = ["en", "es"]
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')

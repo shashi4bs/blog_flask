@@ -1,23 +1,4 @@
-2019-05-05 14:23:23,746 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:46]
-2019-05-05 14:23:37,210 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 71, in edit_profile
-    form = EditProfileForm()
-TypeError: EditProfileForm() takes exactly 1 argument (0 given)
-2019-05-05 14:33:50,003 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-05 14:33:53,407 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+2019-05-08 20:37:50,150 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -34,8 +15,9 @@ Traceback (most recent call last):
   File "/home/shashi/Desktop/web/flask/app/routes.py", line 72, in edit_profile
     if form.validate_on_submit():
 AttributeError: 'NoneType' object has no attribute 'validate_on_submit'
-2019-05-05 14:36:56,108 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-05 14:37:01,573 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+2019-05-08 20:39:22,719 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:15:21,397 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:15:24,273 : ERROR: Exception on / [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -47,13 +29,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 71, in edit_profile
-    form = EditProfileForm()
-TypeError: EditProfileForm() takes exactly 1 argument (0 given)
-2019-05-05 14:38:15,205 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-05 14:38:19,439 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 14, in index
+    form = PostForm()
+TypeError: PostForm() takes exactly 1 argument (0 given)
+2019-05-09 07:16:52,713 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:16:58,201 : ERROR: Exception on / [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -65,13 +45,31 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 71, in edit_profile
-    form = EditProfileForm()
-TypeError: EditProfileForm() takes exactly 1 argument (0 given)
-2019-05-05 14:38:52,239 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-05 14:38:53,865 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 32, in index
+    return render_template('index.html', title = 'Home', user = user)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/Desktop/web/flask/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shashi/Desktop/web/flask/app/templates/base.html", line 24, in top-level template code
+    {% block content %}{% endblock %}</html>
+  File "/home/shashi/Desktop/web/flask/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag }}
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2019-05-09 07:18:14,831 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:19:45,630 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:39:38,894 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:40:33,377 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:41:45,381 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
+2019-05-09 07:42:57,193 : ERROR: Exception on / [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -83,32 +81,12 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 72, in edit_profile
-    if form.validate_on_submit():
-AttributeError: 'NoneType' object has no attribute 'validate_on_submit'
-2019-05-05 14:51:57,241 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-05 14:52:12,392 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:04:53,136 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:05:14,231 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:05:31,654 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:06:31,735 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:08:11,055 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:08:21,361 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:08:27,269 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:24:49,642 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:24:55,288 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:27:46,718 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:32:09,488 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:52:41,303 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:53:14,792 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 16:59:33,469 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 17:00:32,687 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 17:00:37,935 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-06 17:00:55,913 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-08 20:36:40,966 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]
-2019-05-08 20:37:42,821 : ERROR: Exception on /edit_profile [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 21, in index
+    posts = current_user.followed_posts().all()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-05-09 07:44:33,012 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -120,8 +98,26 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 72, in edit_profile
-    if form.validate_on_submit():
-AttributeError: 'NoneType' object has no attribute 'validate_on_submit'
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 21, in index
+    posts = current_user.followed_posts().all()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-05-09 07:44:54,682 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/Desktop/web/flask/app/routes.py", line 21, in index
+    posts = current_user.followed_posts().all()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2019-05-09 15:59:56,498 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:47]

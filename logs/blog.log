@@ -1,4 +1,4 @@
-2019-07-04 17:59:32,810 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+2019-07-08 15:10:04,315 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -10,14 +10,24 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
-    posts = current_user.followed_posts().paginate(
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
-    return getattr(self._get_current_object(), name)
-AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
-2019-07-04 18:05:00,802 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:49]
-2019-07-07 09:19:30,931 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:53]
-2019-07-07 09:19:50,747 : ERROR: Exception on / [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/login_manager.py", line 175, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 112, in login_url
+    base = expand_login_view(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 89, in expand_login_view
+    return url_for(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'login' instead?
+2019-07-08 15:10:10,485 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -29,15 +39,49 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/shashi/Desktop/web/flask/app/routes.py", line 24, in index
-    posts = current_user.followed_posts().paginate(
-  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
-    return getattr(self._get_current_object(), name)
-AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
-2019-07-07 09:22:41,373 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:53]
-2019-07-07 09:26:32,269 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:53]
-2019-07-07 09:42:02,292 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:55]
-2019-07-07 14:44:24,424 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:55]
-2019-07-07 15:05:40,863 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:57]
-2019-07-07 15:06:08,959 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:57]
-2019-07-07 15:14:02,879 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:57]
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/login_manager.py", line 175, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 112, in login_url
+    base = expand_login_view(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 89, in expand_login_view
+    return url_for(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'login' instead?
+2019-07-08 15:10:44,134 : ERROR: Exception on /index [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/login_manager.py", line 175, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 112, in login_url
+    base = expand_login_view(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 89, in expand_login_view
+    return url_for(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'login' instead?
