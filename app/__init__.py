@@ -81,12 +81,11 @@ def create_app(config_class = Config):
                 toaddrs = App.config['ADMINS'], subject='BLOG Failue',\
                 credentials=auth, secure=secure\
             )
-
             mail_handler.setLevel(logging.ERROR)
             App_.logger.addHandler(mail_handler)
         if App_.config['LOG_TO_STDOUT']:
             stream_handler = logging.StreamHandler(stdout)
-            stream_handler.set_Level(logging.INFO)
+            #stream_handler.set_Level(logging.INFO)
             App_.logger.addHandler(stream_handler)
         else:
             if not os.path.exists('logs'):
