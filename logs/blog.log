@@ -85,3 +85,35 @@ Traceback (most recent call last):
   File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/routing.py", line 2181, in build
     raise BuildError(endpoint, values, method, self)
 BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'login' instead?
+2019-07-09 13:27:42,680 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:99]
+2019-07-09 13:28:11,051 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:99]
+2019-07-09 13:28:17,371 : ERROR: Exception on / [GET] [in /home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/login_manager.py", line 175, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 112, in login_url
+    base = expand_login_view(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask_login/utils.py", line 89, in expand_login_view
+    return url_for(login_view)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/shashi/libs/anaconda3/lib/python2.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'login' instead?
+2019-07-09 13:29:10,546 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:99]

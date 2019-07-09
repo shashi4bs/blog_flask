@@ -10,14 +10,14 @@ from flask_mail import Mail
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel
-
+from sys import stdout
 
 
 #App = Flask(__name__)
 db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
-login.login_view = 'auth.login'
+login.login_view = 'login'
 login.login_message = 'Please log in to access this page'
 mail = Mail()
 bootstrap = Bootstrap()
@@ -85,7 +85,7 @@ def create_app(config_class = Config):
             mail_handler.setLevel(logging.ERROR)
             App_.logger.addHandler(mail_handler)
         if App_.config['LOG_TO_STDOUT']:
-            stream_handler = logging.StreamHandler()
+            stream_handler = logging.StreamHandler(stdout)
             stream_handler.set_Level(logging.INFO)
             App_.logger.addHandler(stream_handler)
         else:
