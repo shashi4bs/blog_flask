@@ -86,7 +86,7 @@ def create_app(config_class = Config):
             App_.logger.addHandler(mail_handler)
         if App_.config['LOG_TO_STDOUT']:
             stream_handler = logging.StreamHandler()
-            stream_handler.set_level(logging.INFO)
+            stream_handler.set_Level(logging.INFO)
             App_.logger.addHandler(stream_handler)
         else:
             if not os.path.exists('logs'):
