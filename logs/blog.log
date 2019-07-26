@@ -117,3 +117,9 @@ Traceback (most recent call last):
     raise BuildError(endpoint, values, method, self)
 BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'login' instead?
 2019-07-09 13:29:10,546 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:99]
+2019-07-26 09:04:34,599 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:98]
+2019-07-26 09:05:32,189 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:98]
+2019-07-26 09:07:21,472 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:98]
+2019-07-26 09:07:43,839 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:98]
+2019-07-26 09:11:25,856 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:98]
+2019-07-26 09:11:35,586 : INFO: Blog Setup [in /home/shashi/Desktop/web/flask/app/__init__.py:98]

@@ -4,8 +4,10 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config():
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret_key'
+    #SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+    #    'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(basedir, 'app.db')
+    '''postgres://kdehfyahmyrcnx:ccafeab0987183d8f05b1257c8b2e4234b7ee50229eecbe1f6baf75b81f6c2b4@ec2-50-16-197-244.compute-1.amazonaws.com:5432/debadho9t7nuf4'''
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     #Mail Configuration
