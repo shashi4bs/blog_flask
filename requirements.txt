@@ -178,7 +178,7 @@ python-dotenv==0.10.1
 python-editor==1.0.4
 pytz==2019.1
 PyWavelets==1.0.3
-PyYAML==5.1
+PyYAML==5.4
 pyzmq==17.1.2
 QtAwesome==0.5.7
 qtconsole==4.4.3
