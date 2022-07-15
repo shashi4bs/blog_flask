@@ -45,7 +45,7 @@ dask==1.2.0
 datashape==0.5.4
 decorator==4.4.0
 defusedxml==0.6.0
-distributed==1.27.1
+distributed==2021.10.0
 docutils==0.14
 dominate==2.3.5
 elasticsearch==7.0.2
